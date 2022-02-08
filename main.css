@@ -1,0 +1,82 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: white;
+}
+
+@font-face {
+    font-family: folio;
+    src: url(assets/font/FOLIOL.ttf);    
+}
+
+@font-face {
+    font-family: WireType;
+    src: url(assets/font/WireTypeMonoSC-Regular.ttf);
+}
+
+li {
+    list-style: none;
+    padding-top: 15px;
+    font-family: folio;
+}
+
+footer {
+    background-color: #1B1B1B;
+    padding: 40px;
+}
+
+footer .logo {
+    height: 60px;
+}
+footer .logo img {
+    height: 60px;
+    width: 210px;
+    background-size: cover;
+}
+footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+.para {
+    opacity: 0.8;
+    font-family: folio;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.terms {
+    display: flex;
+    padding-right: 5px;
+}
+.terms li {
+    padding-right: 10px;
+    font-size: 0.9em;
+}
+
+/* ==== responsive ==== */
+
+@media screen and (max-width: 600px) {
+
+    footer .logo {
+        height: 40px;
+    }
+    footer .logo img {
+        height: 40px;
+        width: 150px;
+        background-size: cover;
+    }
+    
+    footer .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    footer .container .box2 {
+        margin-top: 10px;
+        border-top: 1px solid white;
+    }
+  }
